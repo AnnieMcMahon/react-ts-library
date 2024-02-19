@@ -1,12 +1,11 @@
 {
   "name": "react-ts-library",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Component Library for Building React Applications faster",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rollup-build-lib": "rollup -c"
   },
-  "author": "",
+  "author": "Annie McMahon",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
@@ -17,10 +16,20 @@
     "react-dom": "^18.2.0",
     "rollup": "^4.12.0",
     "rollup-plugin-dts": "^6.1.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "tslib": "^10.4.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "tslib": "^2.6.2"
   }
 }
