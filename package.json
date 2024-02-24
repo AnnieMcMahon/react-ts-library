@@ -1,6 +1,6 @@
 {
   "name": "react-ts-library",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A component library for building React applications faster",
   "scripts": {
     "rollup-build-lib": "rollup -c",
