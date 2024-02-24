@@ -1,0 +1,55 @@
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 25rem;
+  height: 22rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0.5rem;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 20rem;
+  max-height: 20rem;
+  padding: 0.5rem;
+}
+
+.back p {
+  text-align: left;
+  padding: 0.5rem 2rem;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateX(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+  overflow: auto;
+  position: absolute;
+  top: 1rem;
+}
+
+.card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  padding: 1rem;
+  width: 100%;
+}
+
+.card.flip .card-inner {
+  transform: rotateY(180deg);  
+}
