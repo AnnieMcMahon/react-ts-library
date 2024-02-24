@@ -15,7 +15,7 @@ Fork this repository (click on the Fork icon on GitHub)
 In your code editor (I use Visual Studio Code), open the folder where you want to add this project  
 (example: C:\myAwesomeProjects)
 
-Open a terminal (CTRL + ` on VS Code) and clone the project  
+Open a terminal and clone the project  
 (copy and paste your fork's URL after "git clone"):  
 `git clone https://github.com/<YOUR-USERNAME>/react-ts-library.git`
 
