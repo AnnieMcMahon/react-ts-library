@@ -6,4 +6,19 @@ interface ButtonProps {
 }
 declare const Button: ({ label, color }: ButtonProps) => React.JSX.Element;
 
-export { Button };
+interface CardProps {
+    card: {
+        id: number;
+        title: string;
+        image: string;
+        technology: string;
+        summary: string;
+        gitHubLink: string;
+        gitHubTitle: string;
+        webPageLink: string;
+        webPageTitle: string;
+    };
+}
+declare const Card: ({ card }: CardProps) => React.JSX.Element;
+
+export { Button, Card };
